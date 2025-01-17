@@ -33,7 +33,8 @@ if __name__ == "__main__":
     soop_post_cralwer = SoopPostCrawler(db)
     
     th_cafe = Thread(target=cafe_post_crawler.crawl_loop)
-    th_x = Thread(target=x_post_crawler.crawl_loop, args=(True, ))
+    # th_x = Thread(target=x_post_crawler.crawl_loop, args=(True, ))
+    th_x = Thread(target=x_post_crawler.crawl_loop)
     th_soop = Thread(target=soop_post_cralwer.crawl_loop)
     th_ig = Thread(target=ig_post_crawler.crawl_loop)
     

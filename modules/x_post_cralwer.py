@@ -242,7 +242,7 @@ class XPostCrawler(BaseCrawler):
                 time.sleep(10)
                 continue
             self.update_post_by_list(name, posts, includes)
-            delay = 30*60 if test == False else 1
+            delay = 15*60 if test == False else 1
             print(f"Crawled x posts of [{name}]\nwait for {delay:.2f}s...\n")
             time.sleep(delay)
         time.sleep(15)
