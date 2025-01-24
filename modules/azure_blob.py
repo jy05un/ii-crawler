@@ -8,7 +8,7 @@ class AzureBlob:
         connection_string = os.getenv("AZURE_BLOB_CONNECTION_STRING")
         self.blob_service_client = BlobServiceClient.from_connection_string(connection_string)
         
-        self.container_name = "ii-1"
+        self.container_name = "crawlingdata"
         
         try:
             self.container_client = self.blob_service_client.get_container_client(self.container_name)

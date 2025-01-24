@@ -143,7 +143,7 @@ class IgPostCrawler(BaseCrawler):
                 post_id = post_id,
                 file_type=FileType.local
             )
-        # self.azure_blob.container_client.upload_blob(name = str(new_file.id), data=raw_rsrc)
+        self.azure_blob.container_client.upload_blob(name = str(new_file.id), data=raw_rsrc)
         print(f"\t\traw_rsrc was registered to azure blob! [{new_file.id}]")
         return new_file
     
