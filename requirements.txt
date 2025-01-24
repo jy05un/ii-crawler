@@ -1,0 +1,15 @@
+requirements_with_iicrawler = """
+python-dotenv
+beautifulsoup4
+sqlalchemy
+requests
+azure-storage-blob
+psycopg2-binary
+"""
+
+# Saving the new requirements to a file
+file_path_with_iicrawler = "/mnt/data/requirements_with_iicrawler.txt"
+with open(file_path_with_iicrawler, "w") as file:
+    file.write(requirements_with_iicrawler)
+
+file_path_with_iicrawler
